@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchangy</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <h1>Exchangy - Currency Converter</h1>
+        </header>
+
+        <main class="main-content">
+            <section class="converter">
+                <div class="input-container">
+                    <input type="number" id="amount" class="input-field" placeholder="Enter Amount">
+                    <div class="currency-container">
+                        <select id="fromCurrency" class="currency-dropdown"></select>
+                        <span class="arrow">→</span>
+                        <select id="toCurrency" class="currency-dropdown"></select>
+                    </div>
+                    <button id="convertBtn" class="convert-btn">Convert</button>
+                </div>
+                <div class="result">
+                    <h2>Converted Amount</h2>
+                    <p id="convertedAmount" class="converted-text">0</p>
+                </div>
+            </section>
+
+            <section class="history">
+                <h2>Conversion History</h2>
+                <div id="historyList" class="history-list"></div>
+                <button id="clearHistoryBtn" class="clear-history-btn">Clear History</button>
+            </section>
+            
+
+            <section class="chart-section">
+                <canvas id="currencyChart" width="400" height="200"></canvas>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

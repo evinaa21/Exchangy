@@ -1,0 +1,223 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    width: 100%; /* Ensure it takes full width */
+    max-width: none; /* Remove max-width restriction */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #4e8db7; /* New color scheme */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #4e8db7;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.converter {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-field {
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.currency-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.currency-dropdown {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    width: 120px;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #4e8db7;
+}
+
+.convert-btn {
+    background-color: #4e8db7; /* Adjusted primary color */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.convert-btn:hover {
+    background-color: #3a70a4;
+}
+.clear-history-btn {
+    background-color: #d9534f; /* Red color for delete action */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.clear-history-btn:hover {
+    background-color: #c9302c;
+}
+
+
+/* Conversion Result */
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.converted-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4e8db7;
+}
+
+/* History Section */
+.history {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 40px;
+}
+
+.history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-list li {
+    background-color: #e7f1ff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    word-wrap: break-word;
+}
+
+/* Chart Section */
+.chart-section {
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+}
+
+.theme-toggle-btn {
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .input-field {
+        width: 100%;
+    }
+
+    .currency-dropdown {
+        width: 100px;
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+
+    .convert-btn {
+        width: 100%;
+    }
+
+    .history-list li {
+        font-size: 0.9rem;
+    }
+}
+
