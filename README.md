@@ -1,5 +1,5 @@
 # Exchangy Currency Converter Web App
-exchangy.netlify.app
+[exchangy.netlify.app](https://exchangy.netlify.app/)
 
 A sleek and modern currency converter web application that allows users to easily convert between different currencies. It provides real-time exchange rates, a live currency chart, conversion history, and supports a variety of global currencies. The application also displays a historical conversion chart for better insights.
 
